@@ -1,0 +1,22 @@
+{
+  "name": "game-of-life",
+  "version": "0.0.1",
+  "description": "Coffeescript representation of Conways 'Game of Life'",
+  "author": "magnus.engstrom@gmail.com",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:mageng/game-of-life.git"
+  },
+  "devDependencies": {
+    "coffee-script": ">= 1.6.2",
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-task-interval": ">= 0.0.1"
+  }
+}

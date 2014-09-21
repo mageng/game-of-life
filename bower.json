@@ -1,0 +1,30 @@
+{
+  "name": "game-of-Life",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "lib",
+    "public",
+    "script",
+    "spec",
+    "src",
+    "test",
+    "Gemfile*",
+    "package.json",
+    "Rakefile",
+    "README.md",
+    "*.rb"
+  ],
+  "contributors": [
+    {
+      "name": "Magnus Engström",
+      "email": "magnus.engstrom@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "normalize-css": "*",
+    "jquery": "*"
+  }
+}
