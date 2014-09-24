@@ -1,5 +1,11 @@
 # Game of life
 
+## What is Game of Life?
+
+  Conway's Game of Life is a single player game with cell patterns growing to a few specific rules (cellular automaton).
+
+  Read more: http://en.wikipedia.org/wiki/Conways_Game_of_Life
+
 ## Use
 
 ### Requirements
