@@ -12,6 +12,7 @@ Open public/index.html in a webkit browser to get going.
 
 Besides a dependency of jQuery, the minimum setup to run the game (with a random board) in the browser looks like this:
 
+```html
   <script src="assets/js/gameoflife.js" type="text/javascript"></script>
   <script>
     jQuery(function() {
@@ -26,6 +27,7 @@ Besides a dependency of jQuery, the minimum setup to run the game (with a random
     <button id="play_pause">Run</button>
     <button id="clear">Clear</button>
   </div>
+```
 
 ## Build
 
@@ -38,17 +40,18 @@ JavaScript compiles and minifies from src/coffee
 
 ### Setup
 
-  npm install
-  bower install
+    npm install
+
+    bower install
 
 ### Build once
 
-  grunt build
+    grunt build
 
 ### Build on file changes
 
-  grunt serve
+    grunt serve
 
 ## Tests
 
-Test are built from 'src/test' and runs in the browser using public/test.html
+Test are built from 'src/test' using the build commands, and runs in the browser using public/test.html
