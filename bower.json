@@ -25,6 +25,9 @@
   ],
   "dependencies": {
     "normalize-css": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "mocha": "*",
+    "chai": "*",
+    "bootstrap": "*"
   }
 }

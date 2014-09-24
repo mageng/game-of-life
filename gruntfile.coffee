@@ -24,12 +24,13 @@ module.exports = (grunt) ->
     concat:
       all:
         files:
-          "public/assets/js/gameoflife.js"             : "src/js/**/*.js"
+          "public/assets/js/gameoflife.js"        : "src/js/**/*.js"
+          "public/assets/js/gameoflife_tests.js"  : "src/test/**/*.js"
 
     uglify:
       dist:
         files:
-          "public/assets/js/gameoflife.min.js"      : "public/assets/js/gameoflife.js"
+          "public/assets/js/gameoflife.min.js"    : "public/assets/js/gameoflife.js"
 
     filesize:
       main: true
@@ -46,7 +47,7 @@ module.exports = (grunt) ->
         spawn: false
         interrupt: true
       src:
-        files: ["src/coffee/**/*.coffee"]
+        files: ["src/coffee/**/*.coffee","src/test/**/*.js"]
         tasks: ["build"]
 
   grunt.registerMultiTask "generate_buildtime", "A task that writes the build time.", ->
@@ -69,4 +70,4 @@ module.exports = (grunt) ->
     "clean"
   ]
   #@registerTask "serve", ["interval","watch"]
-  @registerTask "serve", ["watch"]
+  @registerTask "serve", ["build","watch"]
