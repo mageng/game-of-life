@@ -10,7 +10,7 @@ class @App.Cell
   changed: false
 
   constructor: (options={}) ->
-    # hopefully avoiding unwanted cloning between option states when using recursive data setting
+    # hopefully avoiding unwanted cloning between states, using recursive data setting
     @currentState[key]=value  for key, value of @defaultState
     @currentState[key]=value  for key, value of options
     @setNextState(key, value) for key, value of @currentState
