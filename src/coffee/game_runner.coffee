@@ -90,14 +90,14 @@
         @cells.push cells_row
 
   cellList: ->
-    # Return flattened cell list for more effective array loop
+    # Return flattened list for more effective array loop
     jQuery.map @cells, (i) ->
       return i
 
   play: ->
     _this = App.GameRunner
     if _this.currentOptions.active
-      # Using timeout for desired interval and then calling requestAnimFrame for logic/render
+      # Using timeout for desired interval and then calling requestAnimFrame for doing the cycle
       setTimeout (=>
         window.requestAnimFrame(_this.play)
         return
@@ -118,7 +118,7 @@
     return
 
   getAllNeighbors: (x,y) ->
-    # count all neighbors for cell with coordinats x/y
+    # count all neighbors for cell with coordinates x/y
     return @getPerpendicularNeighbors(x,y) + @getDiagonalNeighbors(x,y)
 
   getPerpendicularNeighbors: (x,y,i=0) ->
