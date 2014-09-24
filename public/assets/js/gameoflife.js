@@ -1,4 +1,4 @@
-window.js_buildtime='2014-09-24 18:02:59';
+window.js_buildtime='2014-09-24 20:58:10';
 this.App || (this.App = {});
 
 this.App.CanvasHandler = (function() {
@@ -48,7 +48,7 @@ this.App.CanvasHandler = (function() {
       }
       if (cell.draw === true) {
         this.context.fillStyle = cell.currentState.color;
-        this.roundRect(this.context, x * this.cellWidth, y * this.cellHeight, this.cellWidth, this.cellHeight, 3);
+        this.roundRect(this.context, (x * this.cellWidth) + 1, (y * this.cellHeight) + 1, this.cellWidth - 2, this.cellHeight - 2, 2);
       }
     }
   };
@@ -65,8 +65,6 @@ this.App.CanvasHandler = (function() {
     ctx.lineTo(x, y + radius);
     ctx.quadraticCurveTo(x, y, x + radius, y);
     ctx.closePath();
-    ctx.strokeStyle = '#FFF';
-    ctx.stroke();
     ctx.fill();
   };
 
@@ -116,7 +114,7 @@ this.App.Cell = (function() {
   Cell.prototype.setDrawStatus = function() {
     if (this.currentState.alive === true) {
       this.draw = true;
-      this.currentState.color = "#111111";
+      this.currentState.color = "#F2B4A8";
     }
   };
 

@@ -21,18 +21,24 @@
           margin: 0 auto;
           margin-top: 10px;
           text-align: center;
+          background: #F8F4D7;
         }
         .controls {
           text-align: center;
+          padding-top: 10px;
           width: 320px;
         }
         .controls button {
-          width: 50%;
+          width: 49%;
           float: left;
+        }
+        .controls button:last-child {
+          float: right;
         }
         .info {
           width: 320px;
-          margin-top: 20px;
+          margin-top: 50px;
+          text-align: center;
         }
         .main-container {
           margin: 0 auto;
@@ -43,9 +49,8 @@
           position: relative;
         }
         .canvas_wrapper canvas {
-          border: 1px solid black;
           border-radius: 3px;
-          background: #EEE;
+          background: #F8F4D7;
         }
         ul {
           list-style: none;
@@ -58,16 +63,18 @@
           <canvas width="320" height="320" id="game_canvas"></canvas>
         </div>
         <div class="controls">
-          <button id="play_pause">Run</button>
-          <button id="clear">Clear</button>
+          <button id="play_pause" class="btn btn-default btn-sm">Run</button>
+          <button id="clear" class="btn btn-default btn-sm">Clear</button>
         </div>
         <br />
         <div class="info">
-          <ul>
-            <li><b>Run</b> starts the game</li>
-            <li><b>Clear</b> clears the current board</li>
-            <li>Click anyware to add/remove cell</li>
-          </ul>
+          <h2>Game of Life</h2>
+          <p class="lead">This is a zero player game, designed using the rules stated by <a href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.</p>
+          <p>
+            <b>Run</b> starts the game.<br />
+            <b>Clear</b> empties the current bord.<br />
+            <b>Click/toch</b> to add/remove cell.<br />
+          </p>
         </div>
       </div>
     </body>

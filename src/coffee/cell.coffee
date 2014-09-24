@@ -20,7 +20,7 @@ class @App.Cell
   setDrawStatus: ->
     if @currentState.alive == true
       @draw = true
-      @currentState.color = "#111111"
+      @currentState.color = "#F2B4A8"
     return
 
   age: ->

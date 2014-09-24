@@ -31,7 +31,7 @@ class @App.CanvasHandler
       @context.clearRect(x*@cellWidth,y*@cellHeight,@cellWidth,@cellHeight) if cell.draw == false
       if cell.draw == true
         @context.fillStyle = cell.currentState.color
-        @roundRect(@context, (x*@cellWidth), (y*@cellHeight), @cellWidth, @cellHeight, 3)
+        @roundRect(@context, (x*@cellWidth)+1, (y*@cellHeight)+1, @cellWidth-2, @cellHeight-2, 2)
       return
 
 
@@ -48,7 +48,7 @@ class @App.CanvasHandler
     ctx.lineTo x, y + radius
     ctx.quadraticCurveTo x, y, x + radius, y
     ctx.closePath()
-    ctx.strokeStyle = '#FFF'
-    ctx.stroke()
+    # ctx.strokeStyle = '#F4B36C'
+    # ctx.stroke()
     ctx.fill()
     return
