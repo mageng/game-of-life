@@ -6,15 +6,15 @@
 
   Read more: http://en.wikipedia.org/wiki/Conways_Game_of_Life
 
-## Use
+## Getting started
 
 ### Requirements
 
   * Bower (http://bower.io)
 
-### Getting started
+### Run the game
 
-Open public/index.html in a webkit browser to get going.
+Open public/index.html or use the online version at http://game-of-life-coffee.herokuapp.com/ to get going.
 
 Besides a dependency of jQuery, the minimum setup to run the game (with a random board) in the browser looks like this:
 
