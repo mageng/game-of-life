@@ -1,5 +1,9 @@
 # Game of life
 
+A version of Conway's Game of Life in JavaScript, using a object oriented design.
+
+Online at http://game-of-life-coffee.herokuapp.com/
+
 ## What is Game of Life?
 
   Conway's Game of Life is a single player game with cell patterns growing to a few specific rules (cellular automaton).
