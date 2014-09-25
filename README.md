@@ -14,7 +14,13 @@ Online at http://game-of-life-coffee.herokuapp.com/
 
 ### Requirements
 
+  To run the project 'as is' there are no need for Bower to be installed.
+
+  #### To reinstall or update assets / libs:
+
   * Bower (http://bower.io)
+
+    bower install
 
 ### Run the game
 
@@ -52,7 +58,6 @@ JavaScript compiles and minifies from src/coffee
 
     npm install
 
-    bower install
 
 ### Build once
 
